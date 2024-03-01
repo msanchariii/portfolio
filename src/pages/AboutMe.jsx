@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Projects from "./Projects";
 Projects;
 function AboutMe() {
@@ -36,7 +36,9 @@ function AboutMe() {
                             </Link>
                         </div>
                         <div className="btn opacity-70 bg-slate-900">
-                            View All Projects
+                            <NavLink to={"/projects"}>
+                                View All Projects
+                            </NavLink>
                         </div>
                     </div>
                     <div
