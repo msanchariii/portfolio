@@ -1,35 +1,26 @@
 import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data.js";
 
 export default function Projects() {
     return (
         <div>
-            <h1 className="text-4xl text-center py-16">About Me !</h1>
+            <h1 className="py-16 text-center text-4xl">Projects !</h1>
 
-            <section className="min-h-screen w-full flex justify-center items-stretch">
-                <div className="w-full flex flex-wrap gap-8 justify-start">
-                    <ProjectCard
-                        title="Hello World"
-                        imgSrc={
-                            "https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        }
-                    />
-
-                    <ProjectCard
-                        imgSrc={
-                            "https://images.pexels.com/photos/17852406/pexels-photo-17852406/free-photo-of-people-walking-on-wooden-footpath-on-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        }
-                    />
-
-                    <ProjectCard
-                        imgSrc={
-                            "https://images.pexels.com/photos/16961112/pexels-photo-16961112/free-photo-of-surrounded-by-circles.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        }
-                    />
-                    <ProjectCard
-                        imgSrc={
-                            "https://images.pexels.com/photos/16965790/pexels-photo-16965790/free-photo-of-ships-anchored-in-harbor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        }
-                    />
+            <section className="mb-20 flex min-h-screen w-full items-stretch justify-center">
+                <div className="flex w-full flex-wrap justify-start gap-8">
+                    {projects.map((item) => {
+                        return (
+                            <ProjectCard
+                                key={item.id}
+                                title={item.title}
+                                imgSrc={item.imgSrc}
+                                link={item.link}
+                                githubLink={item.githubLink}
+                                tech={item.tech}
+                                desc={item.description}
+                            />
+                        );
+                    })}
                 </div>
             </section>
         </div>

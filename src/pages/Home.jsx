@@ -1,36 +1,64 @@
 import { Link, NavLink } from "react-router-dom";
-import Skills from "./Skills";
-import AboutMe from "./AboutMe";
+import Skills from "../components/Skills";
+import AboutMe from "../components/AboutMe";
 import ProjectCard from "../components/ProjectCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { topProjects } from "../data";
+
 function Home() {
+    AOS.init();
     return (
-        <div className="w-full min-h-screen grid place-content-center font-bold text-neutral-300 text-center">
-            <div className="text-5xl font-Fuggles h-screen flex items-center justify-center ">
-                <div className="blur h-4/6 w-96 opacity-30 absolute bg-slate-950 rounded-full"></div>
+        <div className="grid min-h-screen place-content-center text-center font-bold text-neutral-300">
+            <div className="flex h-screen items-center justify-center font-Fuggles text-5xl ">
+                <div className="absolute h-4/6 w-96 rounded-full bg-slate-950 opacity-30 blur"></div>
                 <Link>Sanchari Mandal</Link>
             </div>
-            <AboutMe></AboutMe>
+            <span
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+            >
+                <AboutMe></AboutMe>
+            </span>
             <Skills></Skills>
-            {/* Best Projects */}
-            <h1 className="text-4xl py-16 my-8">Projects</h1>
+            <span
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="50"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"
+                data-aos-anchor-placement="top-center"
+            >
+                {/* Best Projects */}
+                <h1 className="my-8 py-16 text-4xl">Projects</h1>
 
-            <div className="flex text-left mb-20 scale-90">
-                <ProjectCard
-                    title="Hello World"
-                    imgSrc={
-                        "https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    }
-                />
-                <ProjectCard
-                    title="Hello World"
-                    imgSrc={
-                        "https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    }
-                />
-            </div>
-            <div className="btn opacity-70 bg-slate-900 w-1/3 mx-auto mt-0 mb-8">
-                <NavLink to={"/projects"}>View All</NavLink>
-            </div>
+                <div className="mb-10 flex scale-90 text-left">
+                    {topProjects.map((item) => {
+                        return (
+                            <ProjectCard
+                                key={item.id}
+                                title={item.title}
+                                imgSrc={item.imgSrc}
+                                link={item.link}
+                                githubLink={item.githubLink}
+                                tech={item.tech}
+                                desc={item.description}
+                            />
+                        );
+                    })}
+                </div>
+                <div className="btn mx-auto mb-20 mt-0 w-1/3 bg-slate-900 opacity-70">
+                    <NavLink to={"/projects"}>View All</NavLink>
+                </div>
+            </span>
         </div>
     );
 }

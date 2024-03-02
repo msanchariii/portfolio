@@ -6,8 +6,6 @@ import "./index.css";
 import Layout from "./Layout.jsx";
 // import pages & components
 import Home from "./pages/Home.jsx";
-import AboutMe from "./pages/AboutMe.jsx";
-import Skills from "./pages/Skills.jsx";
 import Projects from "./pages/Projects.jsx";
 
 const router = createBrowserRouter([
@@ -19,17 +17,10 @@ const router = createBrowserRouter([
                 path: "",
                 element: <Home />,
             },
-            {
-                path: "aboutme",
-                element: <AboutMe />,
-            },
+
             {
                 path: "projects",
                 element: <Projects />,
-            },
-            {
-                path: "skills",
-                element: <Skills />,
             },
         ],
     },
@@ -38,5 +29,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <RouterProvider router={router} />
-    </React.StrictMode>
+    </React.StrictMode>,
 );

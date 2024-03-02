@@ -6,23 +6,24 @@ export default function ProjectCard({
     tech = `HTML, CSS, Js, React`,
     imgSrc,
     githubLink,
+    desc,
 }) {
     return (
-        <div className="mx-auto m-4">
-            <div className="mockup-browser border w-full bg-slate-800 ">
+        <div className="m-4 mx-auto">
+            <div className="mockup-browser w-full border bg-slate-800 ">
                 <div className="mockup-browser-toolbar">
-                    <div className="input hover:underline cursor-pointer">
+                    <div className="input cursor-pointer hover:underline">
                         {link}
                     </div>
                 </div>
-                <div className="flex justify-center flex-col bg-base-200 w-full aspect-video">
+                <div className="flex aspect-video w-full flex-col justify-center bg-base-200">
                     <img
-                        className="object-cover max-w-lg  aspect-video"
+                        className="aspect-video max-w-lg  object-cover"
                         src={imgSrc}
                         alt=""
                         srcset=""
                     />
-                    <div className="w-1/3 absolute bottom-2 right-2 flex justify-around mx-4">
+                    <div className="absolute bottom-2 right-2 mx-4 flex w-1/3 justify-around">
                         <div className="btn border-0 bg-gray-800/75">
                             <Link to={githubLink}>Github</Link>
                         </div>
