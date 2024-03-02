@@ -28,13 +28,7 @@ function AboutMe() {
                             </ul>
                         </div>
                         <div className="btn bg-slate-900 opacity-70">
-                            <Link
-                                to={
-                                    "https://docs.google.com/document/d/1jw6UhFr7ciXQBV_eAhkNqNzOmfE84neOCnPIN3Cxbag/edit?usp=sharing"
-                                }
-                            >
-                                View Resume
-                            </Link>
+                            <Link to={about.resume}>View Resume</Link>
                         </div>
                         <div className="btn bg-slate-900 opacity-70">
                             <Link to={"https://github.com/msanchariii"}>

@@ -64,6 +64,7 @@ const about = {
     linkedin: "https://www.linkedin.com/in/msanchari/",
     email: "sancharim2233@gmail.com",
     twitter: "#",
+    resume: "https://docs.google.com/document/d/1jw6UhFr7ciXQBV_eAhkNqNzOmfE84neOCnPIN3Cxbag/edit?usp=sharing",
 };
 
 export { projects, about, topProjects };
