@@ -1,12 +1,12 @@
 const projects = [
     {
         id: 1,
-        link: "",
-        title: "Project 1",
-        tech: "",
-        imgSrc: "https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        githubLink: "",
-        description: "",
+        link: "https://msanchari.netlify.app/",
+        title: "Personal Portfolio",
+        tech: "HTML, CSS, Js, TailwindCSS, React.js",
+        imgSrc: "/screenshots/portfolio.png",
+        githubLink: "https://github.com/msanchariii/portfolio",
+        description: "Built my first portfolio to showcase my projects",
     },
     {
         id: 2,
@@ -37,26 +37,7 @@ const projects = [
     },
 ];
 
-const topProjects = [
-    {
-        id: 1,
-        link: "",
-        title: "Project 1",
-        tech: "",
-        imgSrc: "https://images.pexels.com/photos/18280489/pexels-photo-18280489/free-photo-of-light-black-and-white-city-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        githubLink: "",
-        description: "",
-    },
-    {
-        id: 2,
-        link: "",
-        title: "Project 2",
-        tech: "",
-        imgSrc: "https://images.pexels.com/photos/17852406/pexels-photo-17852406/free-photo-of-people-walking-on-wooden-footpath-on-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        githubLink: "",
-        description: "",
-    },
-];
+const topProjects = [projects[0], projects[1]];
 
 const about = {
     bio: "Hey, I'm Sanchari, a 2nd-year student pursuing Information Technology at Government College of Engineering and Ceramic Technology. 🚀 I'm diving into web development, and my tech stack includes HTML, CSS, Javascript, TailwindCSS, Node.js, express.js, React.js, Next.js, and MongoDB. Exciting times ahead! 💻✨",
