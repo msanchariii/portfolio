@@ -5,15 +5,13 @@ import ProjectCard from "../components/ProjectCard";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { topProjects } from "../data";
+import Hero from "../components/Hero";
 
 function Home() {
     AOS.init();
     return (
         <div className="grid min-h-screen place-content-center text-center font-bold text-neutral-300">
-            <div className="flex h-screen items-center justify-center font-Fuggles text-5xl ">
-                <div className="absolute h-4/6 w-96 rounded-full bg-slate-950 opacity-30 blur"></div>
-                <Link>Sanchari Mandal</Link>
-            </div>
+            <Hero />
             <span
                 data-aos="fade-up"
                 data-aos-offset="200"
@@ -55,9 +53,11 @@ function Home() {
                         );
                     })}
                 </div>
-                <div className="btn mx-auto mb-20 mt-0 w-1/3 bg-slate-900 opacity-70">
-                    <NavLink to={"/projects"}>View All</NavLink>
-                </div>
+                <NavLink to={"/projects"}>
+                    <div className="btn mx-auto mb-20 mt-0 w-1/3 bg-slate-900 opacity-70">
+                        View All
+                    </div>
+                </NavLink>
             </span>
         </div>
     );

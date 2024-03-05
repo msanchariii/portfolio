@@ -4,7 +4,7 @@ import { about } from "../data";
 function AboutMe() {
     return (
         <>
-            <section className="mx-auto my-12 p-6 md:p-12">
+            <section className=" mx-auto my-12 bg-gradient-to-tr from-[#2a9d8f] to-[#264653] p-6 md:p-12">
                 <h1 className="py-16 text-4xl">About Me !</h1>
 
                 <div className="flex flex-col lg:flex-row lg:items-stretch">
@@ -27,22 +27,24 @@ function AboutMe() {
                                 </li>
                             </ul>
                         </div>
-                        <div className="btn bg-slate-900 opacity-70">
-                            <Link to={about.resume}>View Resume</Link>
-                        </div>
-                        <div className="btn bg-slate-900 opacity-70">
-                            <Link to={"https://github.com/msanchariii"}>
+                        <Link to={about.resume}>
+                            <div className="btn w-80 bg-slate-900 opacity-90 shadow shadow-white">
+                                View Resume
+                            </div>
+                        </Link>
+                        <Link to={"https://github.com/msanchariii"}>
+                            <div className="btn w-80 bg-slate-900 opacity-90 shadow shadow-white">
                                 Visit GitHub
-                            </Link>
-                        </div>
-                        <div className="btn bg-slate-900 opacity-70">
-                            <NavLink to={"/projects"}>
+                            </div>
+                        </Link>
+                        <NavLink to={"/projects"}>
+                            <div className="btn w-80 bg-slate-900 opacity-90 shadow shadow-white">
                                 View All Projects
-                            </NavLink>
-                        </div>
+                            </div>
+                        </NavLink>
                     </div>
                     <div
-                        className=" mx-auto my-auto flex h-screen min-h-screen w-full flex-col justify-between bg-gradient-to-br from-slate-800 to-slate-900 p-12 text-left drop-shadow lg:mx-6 lg:w-3/5"
+                        className="sha\ mx-auto my-auto flex h-screen min-h-screen w-full flex-col justify-between rounded-xl bg-gradient-to-br from-slate-800 to-slate-900 p-12 text-left shadow shadow-white  drop-shadow lg:mx-6 lg:w-3/5"
                         id="col-two"
                     >
                         <ul className=" list-disc" id="education">

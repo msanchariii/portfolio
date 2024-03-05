@@ -4,7 +4,12 @@ import Footer from "./components/Footer";
 
 export default function Layout() {
     return (
-        <section className="to-emarald-950 bg-gradient-to-tr from-cyan-900 via-teal-800 font-mono">
+        // <section className="to-emarald-950 bg-gradient-to-tr from-cyan-900 via-teal-800 font-mono">
+        //     <NavBar />
+        //     <Outlet />
+        //     <Footer />
+        // </section>
+        <section className=" font-mono">
             <NavBar />
             <Outlet />
             <Footer />

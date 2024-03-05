@@ -4,7 +4,9 @@ import { projects } from "../data.js";
 export default function Projects() {
     return (
         <div>
-            <h1 className="py-16 text-center text-4xl">Projects !</h1>
+            <h1 className="py-16 text-center text-4xl" id="projects">
+                Projects !
+            </h1>
 
             <section className="mb-20 flex min-h-screen w-full items-stretch justify-center">
                 <div className="flex w-full flex-wrap justify-start gap-8">

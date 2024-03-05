@@ -11,7 +11,7 @@ function SkillIcon({ img, title }) {
             data-aos-mirror="true"
             data-aos-once="false"
         >
-            <div className="h-40 flex flex-col justify-between">
+            <div className="flex h-40 flex-col justify-between">
                 <img className="h-32" src={img} alt="" srcset="" />
                 <h2>{title}</h2>
             </div>
@@ -22,10 +22,10 @@ function SkillIcon({ img, title }) {
 export default function Skills() {
     AOS.init();
     return (
-        <section className="text-center">
-            <section className="flex flex-col justify-evenly my-16">
+        <section className=" text-center">
+            <section className="my-16 flex flex-col justify-evenly">
                 <div
-                    className="w-1/2 text-center mx-auto"
+                    className="mx-auto w-1/2 text-center"
                     data-aos="fade-up"
                     data-aos-delay="50"
                     data-aos-duration="500"
@@ -33,11 +33,11 @@ export default function Skills() {
                     data-aos-mirror="true"
                     data-aos-once="false"
                 >
-                    <h1 className="text-4xl py-16">Skills</h1>
+                    <h1 className="py-16 text-4xl">Skills</h1>
                 </div>
 
                 <section className="">
-                    <div className="flex flex-wrap justify-evenly items-baseline px-16">
+                    <div className="flex flex-wrap items-baseline justify-evenly px-16">
                         <SkillIcon img={"/html.png"} title={"HTML"} />
                         <SkillIcon img={"/css.png"} title={"CSS"} />
                         <SkillIcon img={"/js.png"} title={"Js"} />

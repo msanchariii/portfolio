@@ -59,7 +59,7 @@ const topProjects = [
 ];
 
 const about = {
-    bio: "I am currently a student at Government College of Engineering and Ceramic Technology, where I am pursuing a B. Tech degree in Information Technology. My fascination for technology has led me to explore various fields. I am constantly learning and expanding my skillset, and this website represents one of my projects where I was able to apply my knowledge and creativity. I am excited to continue growing and developing my skills, and am eager to take on new challenges.",
+    bio: "Hey, I'm Sanchari, a 2nd-year student pursuing Information Technology at Government College of Engineering and Ceramic Technology. 🚀 I'm diving into web development, and my tech stack includes HTML, CSS, JS, Tailwind, Node, React, Next, and MongoDB. Exciting times ahead! 💻✨",
     github: "https://www.github.com/msanchariii/",
     linkedin: "https://www.linkedin.com/in/msanchari/",
     email: "sancharim2233@gmail.com",
