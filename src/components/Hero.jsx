@@ -20,10 +20,10 @@ export const MyComponent = () => (
 
 function Hero() {
     return (
-        <div className="flex h-screen items-center justify-center font-Fuggles text-5xl ">
+        <div className="flex h-screen items-center justify-center font-Fuggles text-5xl font-semibold text-white">
             {/* <div className="absolute h-4/6 w-96 rounded-full bg-slate-950 opacity-30 blur"></div> */}
             <MyComponent />
-            <Link className="">Sanchari Mandal</Link>
+            <h1 className="">Sanchari Mandal</h1>
         </div>
     );
 }

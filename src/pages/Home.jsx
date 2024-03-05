@@ -29,16 +29,16 @@ function Home() {
                 data-aos="fade-up"
                 data-aos-offset="200"
                 data-aos-delay="50"
-                data-aos-duration="500"
+                data-aos-duration="400"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="false"
                 data-aos-anchor-placement="top-center"
             >
                 {/* Best Projects */}
-                <h1 className="my-8 py-16 text-4xl">Projects</h1>
+                <h1 className="mb-2 mt-8 py-16 text-4xl">Projects</h1>
 
-                <div className="mb-10 flex scale-90 text-left">
+                <div className="mb-10 mt-1 flex scale-90 text-left">
                     {topProjects.map((item) => {
                         return (
                             <ProjectCard
