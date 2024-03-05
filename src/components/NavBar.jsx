@@ -60,7 +60,7 @@ function NavBar() {
                 </ul>
             </div>
             <div className="navbar-end">
-                <div className="btn mx-1 rounded-full bg-transparent hover:btn-neutral">
+                <div className="btn mx-1 rounded-xl bg-transparent hover:btn-neutral hover:shadow-sm hover:shadow-slate-400">
                     <Link to={"https://github.com/msanchariii"}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function NavBar() {
                         </svg>
                     </Link>
                 </div>
-                <div className="btn mx-1 rounded-full bg-transparent hover:btn-neutral">
+                <div className="btn mx-1 rounded-xl bg-transparent hover:btn-neutral hover:shadow-sm hover:shadow-slate-400">
                     <Link to={"https://www.linkedin.com/in/msanchari/"}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

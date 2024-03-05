@@ -59,7 +59,7 @@ const topProjects = [
 ];
 
 const about = {
-    bio: "Hey, I'm Sanchari, a 2nd-year student pursuing Information Technology at Government College of Engineering and Ceramic Technology. 🚀 I'm diving into web development, and my tech stack includes HTML, CSS, JS, Tailwind, Node, React, Next, and MongoDB. Exciting times ahead! 💻✨",
+    bio: "Hey, I'm Sanchari, a 2nd-year student pursuing Information Technology at Government College of Engineering and Ceramic Technology. 🚀 I'm diving into web development, and my tech stack includes HTML, CSS, Javascript, TailwindCSS, Node.js, express.js, React.js, Next.js, and MongoDB. Exciting times ahead! 💻✨",
     github: "https://www.github.com/msanchariii/",
     linkedin: "https://www.linkedin.com/in/msanchari/",
     email: "sancharim2233@gmail.com",

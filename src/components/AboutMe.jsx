@@ -1,6 +1,19 @@
 import { Link, NavLink } from "react-router-dom";
 import { about } from "../data";
 
+function ConnectMeIcon({ icon, link }) {
+    return (
+        <Link to={link}>
+            <img
+                src={icon}
+                className="cursor-pointer rounded-xl p-4 hover:bg-slate-800 hover:shadow-sm hover:shadow-slate-400"
+                alt=""
+                srcset=""
+            />
+        </Link>
+    );
+}
+
 function AboutMe() {
     return (
         <>
@@ -48,8 +61,8 @@ function AboutMe() {
                         id="col-two"
                     >
                         <ul className=" list-disc" id="education">
-                            <h1 className="text-left font-mono text-lg font-bold italic">
-                                # Education:
+                            <h1 className="text-left font-mono text-lg font-bold italic ">
+                                # <span className="underline">Education</span>:
                             </h1>
                             <section className="px-6 font-thin">
                                 <li className="py-4">
@@ -60,7 +73,7 @@ function AboutMe() {
                         </ul>
                         <ul className=" list-disc" id="education">
                             <h1 className="text-left font-mono text-lg font-bold  italic">
-                                # Bio:
+                                # <span className="underline">Bio</span>:
                             </h1>
                             <section className="px-6 font-thin">
                                 {about.bio}
@@ -80,41 +93,30 @@ function AboutMe() {
                         </ul> */}
                         <div className="" id="contact">
                             <h1 className="text-left font-mono text-lg font-bold  italic">
-                                # Connect Me On:
+                                #{" "}
+                                <span className="underline">Connect Me On</span>
+                                :{" "}
                             </h1>
                             <section className="flex w-full justify-between px-1 py-2 md:w-1/2 md:px-4">
-                                <Link to={about.linkedin}>
-                                    <img
-                                        src="/linkedin.svg"
-                                        className="cursor-pointer p-4 hover:bg-slate-800"
-                                        alt=""
-                                        srcset=""
-                                    />
-                                </Link>
-                                <Link to={`mailto:${about.email}`}>
-                                    <img
-                                        src="/mail.svg"
-                                        className="cursor-pointer p-4 hover:bg-slate-800"
-                                        alt=""
-                                        srcset=""
-                                    />
-                                </Link>
-                                <Link to={about.twitter}>
-                                    <img
-                                        src="/twitter.svg"
-                                        className="cursor-pointer p-4 hover:bg-slate-800"
-                                        alt=""
-                                        srcset=""
-                                    />
-                                </Link>
-                                <Link to={about.github}>
-                                    <img
-                                        src="/github.svg"
-                                        className="cursor-pointer p-4 hover:bg-slate-800"
-                                        alt=""
-                                        srcset=""
-                                    />
-                                </Link>
+                                <ConnectMeIcon
+                                    icon="/linkedin.svg"
+                                    link={about.linkedin}
+                                />
+
+                                <ConnectMeIcon
+                                    icon="/mail.svg"
+                                    link={`mailto:${about.email}`}
+                                />
+
+                                <ConnectMeIcon
+                                    icon="/github.svg"
+                                    link={about.github}
+                                />
+
+                                <ConnectMeIcon
+                                    icon="/twitter.svg"
+                                    link={about.twitter}
+                                />
                             </section>
                         </div>
                     </div>
